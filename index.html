@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Authentication with sessionStorage</h2>
+    <h3>Login</h3>
+    <div id="container">
+        <label for="" id="l1" >User Name: </label>
+        <br>
+        <input type="text" id="username" placeholder="Enter UserName">
+        <br>
+        <label for="" id="l2">Password: </label>
+        <br>
+        <input type="password" name="" id="password" placeholder="Enter Password">
+    </div>
+    <div class="btns" onclick = "getCredentials(e)" type="submit">
+        <button id="btn1">Login</button>
+    </div>
+    <div class="btns">
+        <button id="btn2"><a href="./register.html">Register</a></button>
+    </div>
+
+    <script>
+        function getCredentials(e){
+            e.preventDefault();
+            let username = document.getElementById('username').values;
+            let pwd = documet.getElementById('password').values;
+            if(username === "" && pwd === ""){
+                alert("Enter Credentials");
+                return;
+            }
+            let data = JSON.parse(window.sessionStorage.getItem('userinfo'));
+            if(data == null){
+                alert("Register Yourself First");
+            }
+            else{
+                if(username === username.data && password === password.data){
+                    window.location.href = './final.html'
+                }
+                else{
+                    alert("Invalid Username or Password");
+                    return;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

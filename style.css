@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    color: royalblue;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 30px;
+}
+h3{
+    color: rgb(236, 20, 20);
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+#container{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+#l1{
+    font-size: 20px;
+}
+#username{
+    margin-top: 5px;
+    width: 500px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    outline: none;
+    border: 2px solid rgb(212, 203, 203);
+}
+#l2{
+    font-size: 20px;
+}
+#password{
+    margin-top: 5px;
+    width: 500px;
+    height: 35px;
+    padding-left: 10px;
+    outline: none;
+    border: 2px solid rgb(212, 203, 203);
+}
+.btns{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#btn1{
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    outline: none;
+    border: 2px solid lightgreen;
+    color: azure;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#btn2{
+    height: 50px;
+    width: 100px;
+    background-color: royalblue;
+    outline: none;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    font-size: 16px;
+    position: relative;
+    top: -70px;
+    left: 140px;
+}
+#btn2 a{
+    text-decoration: none;
+    color: azure;
+}
