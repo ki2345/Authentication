@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(190, 160, 230),azure,rgb(179, 179, 179));
 }
 h2{
     color: royalblue;
@@ -18,14 +19,11 @@ h3{
     margin-top: 14px;
     font-size: 25px;
 }
-#container{
-    margin-left: 200px;
-    margin-top: 30px;
-}
 #l1{
     font-size: 20px;
+    margin-left: 200px;
 }
-#username{
+#userName{
     margin-top: 5px;
     width: 500px;
     height: 35px;
@@ -33,11 +31,13 @@ h3{
     padding-left: 10px;
     outline: none;
     border: 2px solid rgb(212, 203, 203);
+    margin-left: 200px;
 }
 #l2{
     font-size: 20px;
+    margin-left: 200px;
 }
-#email{
+#Email{
     margin-top: 5px;
     margin-bottom: 20px;
     width: 500px;
@@ -45,21 +45,19 @@ h3{
     padding-left: 10px;
     outline: none;
     border: 2px solid rgb(212, 203, 203);
+    margin-left: 200px;
 }
 #l3{
     font-size: 20px;
+    margin-left: 200px;
 }
-#password{
+#Password{
     margin-top: 5px;
     width: 500px;
     height: 35px;
     padding-left: 10px;
     outline: none;
     border: 2px solid rgb(212, 203, 203);
-}
-
-.btns{
-    margin-top: 20px;
     margin-left: 200px;
 }
 #btn1{
@@ -72,6 +70,6 @@ h3{
     border-radius: 10px;
     font-size: 16px;
     position: relative;
-    top: 5px;
-    left: 2px;
+    top: 70px;
+    left: -505px;
 }

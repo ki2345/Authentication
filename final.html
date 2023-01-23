@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1517498555568-6c318d557ed0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+            background-repeat: no-repeat;
+            background-size: 100% 200%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #btn{
+            position: relative;
+            left: 1260px;
+            top: 20px;
+            width: 80px;
+            height: 40px;
+            font-size: 18px;
+            overflow: none;
+            background-color: ghostwhite;
+            border: 2px solid gray;
+            border-radius: 12px;
+        }
+        h2{
+            text-align: center;
+            margin-top: 200px;
+            font-size: 50px;
+        }
+        span{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Welcome: </h2>
+    <button id="btn">Logout</button>
+    <h2>Welcome <span id="userName"></span> </h2>
+    <script>
+        userName = document.getElementById("userName");
+        data = JSON.parse(window.sessionStorage.getItem("userInfo"));
+        console.log(data);
+        userName.innerText = data.Name;
+        logoutbtn = document.querySelector("#btn");
+        logoutbtn.onclick = function()  {
+            sessionStorage.removeItem("userInfo");
+            window.location.href = "index.html";
+        };
+    </script>
 </body>
 </html>

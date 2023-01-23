@@ -10,35 +10,35 @@
 <body>
     <h2>Authentication with sessionStorage</h2>
     <h3>Register</h3>
-    <div id="container">
-        <label for="" id="l1" >User Name: </label>
+    <br>
+    <form>
+        <label for="userName" id="l1" >User Name: </label>
         <br>
-        <input type="text" id="username" placeholder="Enter UserName">
+        <input type="text" id="userName" placeholder="Enter UserName">
         <br>
-        <label for="" id="l2">Email Address: </label>
+        <label for="Email" id="l2">Email Address: </label>
         <br>
-        <input type="text" id="email" placeholder="Enter Email">
+        <input type="text" id="Email" placeholder="Enter Email">
         <br>
-        <label for="" id="l2">Password: </label>
+        <label for="Password" id="l2">Password: </label>
         <br>
-        <input type="password" name="" id="password" placeholder="Enter Password">
-    </div>
-    <div class="btns">
-        <button id="btn1" onclick="getDetails(e)" type="submit">Submit</button>
-    </div>
+        <input type="password" name="" id="Password" placeholder="Enter Password">
+        <button id="btn1" onclick="getDetails(event)" type="submit">Submit</button>
+    </form>
+
     <script>
         function getDetails(e){
             e.preventDefault();
-            let username = document.getElementById('username').values;
-            let email = document.getElementById('email').values;
-            let pwd = document.getElementById('password').values;
-            if(username === "" && email === "" && pwd === ""){
+            let Name = document.getElementById('userName').value;
+            let mail = document.getElementById('Email').value;
+            let pwd = document.getElementById('Password').value;
+            if(Name === "" && mail === "" && pwd == ""){
                 alert("Add Credentials");
             }
             else{
-                let data = {username,email,pwd};
+                let data = {Name,mail,pwd};
                 let strdata = JSON.stringify(data);
-                window.sessionStorage.setItem('userinfo',strdata);
+                window.sessionStorage.setItem('userInfo',strdata);
                 alert("Account Created Successfully");
                 window.location.href = "./index.html";
             }

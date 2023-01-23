@@ -5,6 +5,8 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(190, 160, 230),azure,rgb(179, 179, 179));
+
 }
 h2{
     color: royalblue;
@@ -18,14 +20,11 @@ h3{
     margin-top: 10px;
     font-size: 25px;
 }
-#container{
-    margin-left: 200px;
-    margin-top: 30px;
-}
 #l1{
     font-size: 20px;
+    margin-left: 200px;
 }
-#username{
+#userName{
     margin-top: 5px;
     width: 500px;
     height: 35px;
@@ -33,20 +32,20 @@ h3{
     padding-left: 10px;
     outline: none;
     border: 2px solid rgb(212, 203, 203);
+    margin-left: 200px;
 }
 #l2{
     font-size: 20px;
+    margin-left: 200px;
+    margin-top: 30px;
 }
-#password{
+#Password{
     margin-top: 5px;
     width: 500px;
-    height: 35px;
+    height: 37px;
     padding-left: 10px;
     outline: none;
     border: 2px solid rgb(212, 203, 203);
-}
-.btns{
-    margin-top: 20px;
     margin-left: 200px;
 }
 #btn1{
@@ -58,6 +57,9 @@ h3{
     color: azure;
     border-radius: 10px;
     font-size: 16px;
+    position: relative;
+    top: 70px;
+    left: -510px;
 }
 #btn2{
     height: 50px;
@@ -68,8 +70,8 @@ h3{
     border-radius: 10px;
     font-size: 16px;
     position: relative;
-    top: -70px;
-    left: 140px;
+    top: 71px;
+    left: -480px;
 }
 #btn2 a{
     text-decoration: none;
